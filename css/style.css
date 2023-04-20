@@ -13,8 +13,22 @@ body {
 }
 
 .box {
-    width: 50vw;
+    width: 800px;
     height: 50vh;
+}
+
+#btnBack,
+#btnNext {
+    position: absolute;
+    top: 50%;
+}
+
+#btnBack {
+    left: 300px;
+}
+
+#btnNext {
+    right: 300px;
 }
 
 .slide {
@@ -27,4 +41,22 @@ body {
 
 .hidden {
     display: none;
+}
+
+.thumbBox{
+    width: 100%;
+    display: flex;
+}
+
+.thumb {
+    display: block;
+    opacity: 0.5;
+    width: calc(100% / 5);
+    height: 80px;
+    object-fit: cover;
+}
+
+.activeThumb {
+    opacity: 1;
+    border: 2px solid red;
 }
